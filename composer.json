@@ -10,6 +10,7 @@
         "api-platform/laravel": "^5.0",
         "codesquirrel/artisan-runner-ui": "~1.0",
         "filament/filament": "~5.0",
+        "laravel/fortify": "~1.0",
         "laravel/framework": "^13.17",
         "laravel/sanctum": "~4.0",
         "laravel/socialite": "~5.31",

@@ -74,3 +74,9 @@
 - `composer require laravel/socialite:~5.31 --no-interaction --no-scripts`; wie Referenz ohne vorgegebenen OAuth-Anbieter oder Zugangsdaten.
 - Prüfung: `php artisan package:discover --ansi`; Composer prüft Laravel-/PHP-Kompatibilität und Sicherheitsmeldungen.
 - Commit: `Add Laravel Socialite OAuth integration foundation`.
+
+### Fortify
+
+- `composer require laravel/fortify:~1.0 --no-interaction --no-scripts`; Referenz-Konfiguration mit deaktivierten Views/Features übernommen. Eigener Provider ruft wie Referenz `Fortify::ignoreRoutes()` auf, damit API-Platform- und Runner-Routen nicht kollidieren.
+- Referenz-spezifische Standard-API-Response-Klassen nicht übernommen; keine neuen `/api/login`-/`/api/user`-Versprechen. Bestehende Runner-Anmeldung bleibt Anwendungscode, Filament verwaltet seine Anmeldung selbst.
+- Prüfung: Paketregistrierung und Sessiontests; Commit `Add Fortify foundation without conflicting automatic routes`.
