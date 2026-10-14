@@ -92,3 +92,9 @@
 - `composer require --dev laramint/laravel-brain:~2.4 --no-interaction --no-scripts`; erzeugte Architekturgraphen Git-ignoriert.
 - Prüfung: `php artisan brain:scan --no-interaction`; lokaler Graph unter `/_laravel-brain`. Produktionssperre des Pakets geprüft. Kein zusätzlicher optionaler MCP-/Security-Scanner installiert.
 - Commit: `Add Laravel Brain development architecture explorer`.
+
+### Eloquent Sluggable
+
+- `composer require cviebrock/eloquent-sluggable:~13.0 --no-interaction --no-scripts`; Referenz-Konfiguration übernommen, keine ungefragte Slug-Spalte am User.
+- `SluggableIntegrationTest` prüft Modellereignisse, eindeutige Slugs und stabile URLs bei Titeländerung; Tabelle nur in Testdatenbank.
+- Commit: `Add Eloquent Sluggable with unique slug integration coverage`.
