@@ -68,3 +68,9 @@
 - `composer require spatie/laravel-medialibrary:~11.0 --no-interaction --no-scripts`; Konfiguration und Media-Migration aus Referenz übernommen. Wie dort noch kein Fachmodell und kein Upload-Endpunkt.
 - Prüfung: Paketregistrierung und bestehende Featuretests mit allen Migrationen auf SQLite `:memory:`.
 - Commit: `Add Spatie Media Library configuration and media migration`.
+
+### Socialite
+
+- `composer require laravel/socialite:~5.31 --no-interaction --no-scripts`; wie Referenz ohne vorgegebenen OAuth-Anbieter oder Zugangsdaten.
+- Prüfung: `php artisan package:discover --ansi`; Composer prüft Laravel-/PHP-Kompatibilität und Sicherheitsmeldungen.
+- Commit: `Add Laravel Socialite OAuth integration foundation`.
