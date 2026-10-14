@@ -1,0 +1,7 @@
+AGENTS.md
+node_modules/
+.npm-cache/
+.quasar/
+dist/
+package-lock.json
+src-electron/package-lock.json

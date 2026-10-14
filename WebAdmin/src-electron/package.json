@@ -1,0 +1,11 @@
+{
+  "name": "webadmin-desktop",
+  "version": "1.0.0",
+  "description": "WebAdmin Electron runtime",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^44.6.0"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+release
+package-lock.json
+AGENTS.md
+CHANGES.md
+Resume-Session.ps1
+test-results
+playwright-report

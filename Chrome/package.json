@@ -1,0 +1,24 @@
+{
+  "name": "leseklar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build.mjs --watch",
+    "build": "node scripts/build.mjs",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "test:browser": "npm run build && node --test --test-isolation=none tests/browser/*.test.mjs",
+    "demo": "node scripts/demo.mjs",
+    "package": "npm run build && node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "eslint": "^9.39.0",
+    "fflate": "^0.8.3",
+    "globals": "^16.5.0",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.6.2"
+  }
+}

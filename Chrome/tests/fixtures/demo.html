@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Leseklar Testseite</title>
+  </head>
+  <body>
+    <h1>Leser*innen, Leser:innen und LeserInnen</h1>
+    <p>eine <strong>engagierte</strong> Studierende</p>
+    <p>Studierende gesucht. Die studierenden Kinder lernen.</p>
+    <p>Ärzt*innen und Kolleg:innen beraten Bürger*innen.</p>
+    <button id="add">Dynamischen Inhalt hinzufügen</button>
+    <button id="listener">Bestehende Ereignisbindung prüfen</button>
+    <p id="listener-result" role="status"></p>
+    <div id="dynamic"></div>
+    <img
+      alt="Leser:innen"
+      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3C/svg%3E"
+    />
+    <button aria-label="Studierende">Beschriftung prüfen</button>
+    <pre>Leser*innen</pre>
+    <textarea aria-label="Eingabe">Studierende</textarea>
+    <div contenteditable="true">Leser:innen</div>
+    <p translate="no">LeserInnen</p>
+    <script>
+      document.getElementById('add').addEventListener('click', () => {
+        const paragraph = document.createElement('p');
+        paragraph.textContent = 'eine engagierte Studierende und Leser*innen';
+        document.getElementById('dynamic').append(paragraph);
+      });
+      document.getElementById('listener').addEventListener('click', () => {
+        document.getElementById('listener-result').textContent =
+          'Ereignisbindung funktioniert.';
+      });
+    </script>
+  </body>
+</html>

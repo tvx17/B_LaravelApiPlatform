@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Leseklar",
+  "version": "0.1.0",
+  "description": "Lokale, anpassbare Textvereinfachung mit Kontextregeln und Regex-Ersetzungen.",
+  "permissions": ["storage"],
+  "action": { "default_title": "Leseklar", "default_popup": "popup.html" },
+  "options_ui": { "page": "options.html", "open_in_tab": true },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "css": ["early.css"],
+      "js": ["settings.js", "engine.js", "dom.js", "content.js"]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+/* CSS arrives before the DOM; the animation is an independent fail-open. */
+@keyframes leseklar-reveal {
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+html:not([data-leseklar-ready='true']) {
+  visibility: hidden;
+  opacity: 0;
+  animation: leseklar-reveal 0s 1.5s forwards;
+}

@@ -1,0 +1,55 @@
+{
+  "name": "webadmin",
+  "version": "0.0.1",
+  "description": "Lokale Konfigurationsverwaltung – Desktop-Grundgerüst",
+  "productName": "WebAdmin",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "quasar dev -m electron",
+    "dev:web": "quasar dev",
+    "build": "quasar build -m electron --skip-pkg",
+    "package": "quasar build -m electron",
+    "lint": "eslint -c eslint.config.js \"src*/**/*.{ts,js,vue}\"",
+    "lint:check": "prettier --check . && npm run lint",
+    "format": "prettier --write .",
+    "typecheck": "vue-tsc --noEmit",
+    "postinstall": "quasar prepare --silent",
+    "test": "node --test tests/*.test.mjs && node scripts/smoke-electron.mjs"
+  },
+  "dependencies": {
+    "@quasar/extras": "^2.1.0",
+    "quasar": "^2.35.0",
+    "vue": "^3.5.22",
+    "vue-router": "^5.0.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.8.0",
+    "eslint-plugin-vue": "^10.8.0",
+    "globals": "^17.4.0",
+    "@vue/eslint-config-typescript": "^14.7.0",
+    "vite-plugin-checker": "^0.14.5",
+    "vue-eslint-parser": "^10.4.0",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "prettier": "^3.8.1",
+    "vue-tsc": "^3.3.3",
+    "@types/node": "^22.19.11",
+    "@quasar/app-vite": "^3.10.2",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "typescript": "^6.0.0"
+  },
+  "keywords": [
+    "quasar",
+    "quasar-app",
+    "quasar-cli",
+    "quasar-app-vite",
+    "vite",
+    "vue",
+    "vuejs"
+  ],
+  "engines": {
+    "node": ">= 26 || ^24 || ^22.12"
+  }
+}

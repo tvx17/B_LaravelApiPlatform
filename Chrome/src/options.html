@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Leseklar – Einstellungen</title>
+    <link rel="stylesheet" href="ui.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Leseklar</h1>
+        <p>
+          Texte nach deinen Vorlieben lesen. Die Verarbeitung bleibt auf deinem
+          Gerät.
+        </p>
+      </header>
+      <form id="settings-form">
+        <section aria-labelledby="general-heading">
+          <h2 id="general-heading">Seitenverarbeitung</h2>
+          <label
+            ><input type="checkbox" id="enabled" />Erweiterung aktivieren</label
+          >
+          <label
+            ><input type="checkbox" id="languageRules" />Sprachregeln
+            aktivieren</label
+          >
+          <p class="hint">
+            Stern, Doppelpunkt und Binnen-I werden für unterstützte Wortformen
+            aufgelöst. Weiblicher Kontext bleibt weiblich, sonst wird die
+            männliche Form verwendet. Die Kontextanalyse ist heuristisch und
+            kann Fehler machen.
+          </p>
+          <label
+            ><input type="checkbox" id="accessibleLabels" />Auch zugängliche
+            Beschriftungen bearbeiten</label
+          >
+          <label for="interval"
+            >Zusätzlicher Scanabstand in Sekunden<small
+              >0 = ausgeschaltet. Nachgeladene Inhalte werden unabhängig davon
+              automatisch geprüft. Hintergrund-Tabs können Scans
+              verzögern.</small
+            ></label
+          >
+          <input
+            id="interval"
+            type="number"
+            min="0"
+            max="86400"
+            step="1"
+            required
+          />
+          <label for="domains"
+            >Ausgenommene Domains<small
+              >Eine Domain je Zeile, ohne https://. Unterdomains sind
+              eingeschlossen.</small
+            ></label
+          >
+          <textarea id="domains" placeholder="beispiel.de"></textarea>
+          <p class="hint">
+            Bei der ersten Verarbeitung wird die Seite höchstens 1,5 Sekunden
+            ausgeblendet. Sehr langsam geladene Inhalte können später sichtbar
+            korrigiert werden. Code und editierbare Inhalte bleiben ausgenommen.
+          </p>
+        </section>
+        <section aria-labelledby="rules-heading">
+          <h2 id="rules-heading">Eigene Regex-Regeln</h2>
+          <p class="hint">
+            Regeln laufen nach den Sprachregeln von oben nach unten. Ersatztexte
+            unterstützen beispielsweise $1. Verwende einfache Muster: komplexe
+            Regex können die Seite blockieren.
+          </p>
+          <div id="rules"></div>
+          <button type="button" id="add-rule" class="secondary">
+            Regel hinzufügen
+          </button>
+        </section>
+        <section aria-labelledby="lexicon-heading">
+          <h2 id="lexicon-heading">Zusätzliche Wortfamilien</h2>
+          <p class="hint">
+            JSON-Liste. „source“ ist der Stamm ohne Endung, zum Beispiel
+            „Studierend“. Eigene Einträge überschreiben die gleichnamige
+            Standardfamilie. „weak“ aktiviert Endungen wie „einen Studenten“.
+          </p>
+          <label for="lexicon">Wortfamilien als JSON</label
+          ><textarea id="lexicon" spellcheck="false" rows="7"></textarea>
+          <details>
+            <summary>Mitgelieferte Wortfamilien</summary>
+            <ul id="families"></ul>
+          </details>
+        </section>
+        <section aria-labelledby="preview-heading">
+          <h2 id="preview-heading">Vorschau</h2>
+          <label for="preview-domain">Domain für die Vorschau</label
+          ><input id="preview-domain" placeholder="beispiel.de" />
+          <label for="sample">Beispieltext</label
+          ><textarea id="sample">
+Eine engagierte Studierende liest für Leser*innen. Studierende gesucht.</textarea>
+          <button type="button" id="preview" class="secondary">
+            Vorschau berechnen</button
+          ><output id="result" aria-live="polite"></output>
+        </section>
+        <button type="submit">Einstellungen speichern</button
+        ><button type="button" id="export" class="secondary">
+          Exportieren
+        </button>
+        <label class="file-button" for="import">Importieren</label
+        ><input
+          type="file"
+          id="import"
+          accept="application/json,.json"
+          hidden
+        />
+        <p id="status" role="status" aria-live="polite"></p>
+        <p class="hint">
+          Änderungen werden nach dem Speichern in geöffneten Seiten übernommen.
+          Ausschalten stellt die ursprünglichen Texte wieder her, soweit die
+          Website sie nicht inzwischen verändert hat.
+        </p>
+      </form>
+      <footer>
+        Keine Texte werden an einen Server übertragen. Diese Erweiterung ersetzt
+        keine vollständige grammatische Analyse oder Prüfung der
+        Barrierefreiheit.
+      </footer>
+    </main>
+    <script src="settings.js"></script>
+    <script src="engine.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

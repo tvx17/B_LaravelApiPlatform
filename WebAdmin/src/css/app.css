@@ -1,0 +1,46 @@
+body {
+  background: #f5f7f8;
+  color: #233343;
+}
+.app-header {
+  background: #fff;
+  color: #233343;
+  border-bottom: 1px solid #e0e5e8;
+}
+.app-drawer {
+  background: #fff;
+}
+.navigation-active {
+  background: #e9f3ef;
+  color: #256b60;
+}
+.page-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.page-title {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 12px 0 20px;
+  letter-spacing: -0.035em;
+}
+.page-intro {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #627181;
+  max-width: 720px;
+}
+.q-card {
+  border-radius: 14px;
+  border-color: #e0e5e8;
+}
+.welcome-card {
+  background: #edf5f2;
+}
+@media (max-width: 599px) {
+  .page-content {
+    padding: 24px 16px;
+  }
+}
