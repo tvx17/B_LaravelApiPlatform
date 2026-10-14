@@ -98,3 +98,9 @@
 - `composer require cviebrock/eloquent-sluggable:~13.0 --no-interaction --no-scripts`; Referenz-Konfiguration übernommen, keine ungefragte Slug-Spalte am User.
 - `SluggableIntegrationTest` prüft Modellereignisse, eindeutige Slugs und stabile URLs bei Titeländerung; Tabelle nur in Testdatenbank.
 - Commit: `Add Eloquent Sluggable with unique slug integration coverage`.
+
+### Migrations Generator
+
+- `composer require --dev kitloong/laravel-migrations-generator:~7.4 --no-interaction --no-scripts`.
+- `MigrationsGeneratorIntegrationTest` exportiert ausschließlich eine isolierte Testtabelle in ein temporäres Verzeichnis mit `--skip-log`, spielt die Migration wieder ein und prüft, dass der Migrationseintrag unverändert bleibt. Kein Export der Anwendungsdatenbank.
+- Commit: `Add Kitloong Migrations Generator with schema replay test`.
