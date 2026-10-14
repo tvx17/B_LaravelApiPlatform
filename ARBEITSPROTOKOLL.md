@@ -86,3 +86,9 @@
 - `composer require --dev laravel/telescope:~5.25 --no-interaction --no-scripts`; automatische Registrierung deaktiviert, ausschließlich in `local` registriert. Konfiguration, Migration und Maskierung sensibler Requestdaten übernommen.
 - Test an vorhandenen Health-Endpunkt `/up` angepasst; `TelescopeTest` prüft lokale Oberfläche, Ausschluss in Testing/Produktion und Maskierung.
 - Commit: `Add local-only Telescope with sensitive request masking`.
+
+### Laravel Brain
+
+- `composer require --dev laramint/laravel-brain:~2.4 --no-interaction --no-scripts`; erzeugte Architekturgraphen Git-ignoriert.
+- Prüfung: `php artisan brain:scan --no-interaction`; lokaler Graph unter `/_laravel-brain`. Produktionssperre des Pakets geprüft. Kein zusätzlicher optionaler MCP-/Security-Scanner installiert.
+- Commit: `Add Laravel Brain development architecture explorer`.
