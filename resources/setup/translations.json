@@ -1,0 +1,1142 @@
+{
+  "Node.js und npm erforderlich. Abhängigkeiten werden aus package-lock.json installiert und die API-Platform-Admin-Assets gebaut. Alternativ public/build separat bereitstellen.": {
+    "en": "Node.js and npm required. Install dependencies from package-lock.json and build API Platform Admin assets. Alternatively provide public/build separately.",
+    "fr": "Node.js et npm requis. Installez les dépendances depuis package-lock.json et compilez API Platform Admin. Vous pouvez fournir public/build séparément.",
+    "it": "Node.js e npm richiesti. Installa dipendenze da package-lock.json e compila API Platform Admin. In alternativa fornisci public/build separatamente.",
+    "es": "Se requieren Node.js y npm. Instala dependencias desde package-lock.json y compila API Platform Admin. También puedes proporcionar public/build por separado."
+  },
+  "Frontend-Assets bauen": {
+    "en": "Build frontend assets",
+    "fr": "Compiler les ressources frontend",
+    "it": "Compila risorse frontend",
+    "es": "Compilar recursos frontend"
+  },
+  "Frontend-Assets für API Platform Admin gebaut.": {
+    "en": "Frontend assets for API Platform Admin built.",
+    "fr": "Ressources frontend pour API Platform Admin compilées.",
+    "it": "Risorse frontend per API Platform Admin compilate.",
+    "es": "Recursos frontend de API Platform Admin compilados."
+  },
+  "Mailzustellung und öffentliche API-Adresse prüfen; keine Testmail versandt. Verifizierungsendpunkte sind noch nicht eingerichtet.": {
+    "en": "Review mail delivery and the public API address; no test email sent. Verification endpoints are not configured yet.",
+    "fr": "Vérifiez la livraison et l’adresse API publique ; aucun e-mail de test envoyé. Les points de vérification ne sont pas encore configurés.",
+    "it": "Controlla invio email e indirizzo API pubblico; nessuna email di prova inviata. Gli endpoint di verifica non sono ancora configurati.",
+    "es": "Revisa la entrega y dirección pública de la API; no se envió un correo de prueba. Los endpoints de verificación aún no están configurados."
+  },
+  "E-Mail-Verifizierung prüfen": {
+    "en": "Review email verification",
+    "fr": "Vérifier la validation e-mail",
+    "it": "Controlla verifica email",
+    "es": "Revisar verificación de correo"
+  },
+  "E-Mail-Verifizierung ist vorbereitet. Mailzustellung und öffentliche API-Adresse prüfen; keine Testmail versandt.": {
+    "en": "Email verification is ready. Check mail delivery and the public API address; no test email sent.",
+    "fr": "La vérification e-mail est prête. Vérifiez la livraison et l’adresse API publique ; aucun e-mail de test envoyé.",
+    "it": "La verifica email è pronta. Controlla invio email e indirizzo API pubblico; nessuna email di prova inviata.",
+    "es": "La verificación está lista. Revisa la entrega y dirección pública de la API; no se envió un correo de prueba."
+  },
+  "Native E-Mail-Verifizierung ist aktiv. Keine zusätzlichen Pakete oder Migrationen erforderlich. Bestehende Konten bleiben unverändert.": {
+    "en": "Native email verification is active. No extra packages or migrations required. Existing accounts are preserved.",
+    "fr": "La vérification e-mail native est active. Aucun paquet ni migration supplémentaire requis. Les comptes existants sont conservés.",
+    "it": "La verifica email nativa è attiva. Non servono pacchetti o migrazioni aggiuntivi. Gli account esistenti restano invariati.",
+    "es": "La verificación nativa está activa. No requiere paquetes ni migraciones adicionales. Se conservan las cuentas existentes."
+  },
+  "Für echte Bestätigungsmails SMTP oder einen anderen Maildienst in .env konfigurieren. APP_URL muss die öffentliche API-Adresse sein; AUTH_VERIFICATION_EXPIRE bestimmt die Linkdauer in Minuten.": {
+    "en": "For real verification emails, configure SMTP or another mail service in .env. APP_URL must be the public API address; AUTH_VERIFICATION_EXPIRE sets link validity in minutes.",
+    "fr": "Pour envoyer des e-mails réels, configurez SMTP ou un service dans .env. APP_URL doit être l’adresse publique de l’API ; AUTH_VERIFICATION_EXPIRE définit la durée en minutes.",
+    "it": "Per email reali, configura SMTP o un servizio email in .env. APP_URL deve essere l’indirizzo API pubblico; AUTH_VERIFICATION_EXPIRE imposta la durata in minuti.",
+    "es": "Para enviar correos reales, configura SMTP u otro servicio en .env. APP_URL debe ser la dirección pública de la API; AUTH_VERIFICATION_EXPIRE define la duración en minutos."
+  },
+  "MAIL_MAILER=log schreibt Bestätigungsmails nur in das Laravel-Log. Hier wird keine Testmail gesendet und kein Benutzer automatisch verifiziert.": {
+    "en": "MAIL_MAILER=log only writes verification emails to the Laravel log. No test email is sent and no user is automatically verified here.",
+    "fr": "MAIL_MAILER=log écrit les e-mails uniquement dans le journal Laravel. Aucun e-mail de test ni validation automatique ici.",
+    "it": "MAIL_MAILER=log scrive le email solo nel log Laravel. Qui non vengono inviate email di prova né verificati utenti automaticamente.",
+    "es": "MAIL_MAILER=log solo escribe los correos en el registro Laravel. Aquí no se envía ningún correo de prueba ni se verifica a usuarios automáticamente."
+  },
+  "Der Bestätigungslink benötigt eine Anmeldung desselben Benutzers. API-Login sowie Filament-/Runner-Zugriff werden nicht pauschal auf verifizierte Benutzer beschränkt.": {
+    "en": "The verification link requires sign-in by the same user. API login and Filament/Runner access are not restricted to verified users by default.",
+    "fr": "Le lien exige la connexion du même utilisateur. L’API, Filament et Runner ne sont pas limités par défaut aux comptes vérifiés.",
+    "it": "Il link richiede l’accesso dello stesso utente. API, Filament e Runner non sono limitati per impostazione predefinita agli utenti verificati.",
+    "es": "El enlace requiere iniciar sesión con el mismo usuario. El acceso API, Filament y Runner no se limita por defecto a usuarios verificados."
+  },
+  "E-Mail-Verifizierungsstatus": {
+    "en": "Email verification status",
+    "fr": "État de vérification e-mail",
+    "it": "Stato verifica email",
+    "es": "Estado de verificación de correo"
+  },
+  "Bestätigungslink anfordern": {
+    "en": "Request verification link",
+    "fr": "Demander un lien de vérification",
+    "it": "Richiedi link di verifica",
+    "es": "Solicitar enlace de verificación"
+  },
+  "Sprache": {
+    "en": "Language",
+    "fr": "Langue",
+    "it": "Lingua",
+    "es": "Idioma"
+  },
+  "Übernehmen": {
+    "en": "Apply",
+    "fr": "Appliquer",
+    "it": "Applica",
+    "es": "Aplicar"
+  },
+  "Einrichtung": {
+    "en": "Setup",
+    "fr": "Configuration",
+    "it": "Configurazione",
+    "es": "Configuración"
+  },
+  "Einrichtung im Browser": {
+    "en": "Browser setup",
+    "fr": "Configuration dans le navigateur",
+    "it": "Configurazione nel browser",
+    "es": "Configuración en el navegador"
+  },
+  "Ein Schritt nach dem anderen. Zum Ausführen genügt ein Klick.": {
+    "en": "One step at a time. Click Execute to run a step.",
+    "fr": "Une étape à la fois. Cliquez sur Exécuter pour lancer une étape.",
+    "it": "Un passaggio alla volta. Fai clic su Esegui per avviarlo.",
+    "es": "Un paso a la vez. Pulsa Ejecutar para iniciar un paso."
+  },
+  "Abhängigkeiten installieren": {
+    "en": "Install dependencies",
+    "fr": "Installer les dépendances",
+    "it": "Installa dipendenze",
+    "es": "Instalar dependencias"
+  },
+  ".env vorbereiten": {
+    "en": "Prepare .env",
+    "fr": "Préparer .env",
+    "it": "Prepara .env",
+    "es": "Preparar .env"
+  },
+  "Konfigurations- und Routencache leeren": {
+    "en": "Clear configuration and route caches",
+    "fr": "Vider les caches de configuration et de routes",
+    "it": "Svuota le cache di configurazione e delle route",
+    "es": "Vaciar cachés de configuración y rutas"
+  },
+  "Anwendungsschlüssel vorbereiten": {
+    "en": "Prepare application key",
+    "fr": "Préparer la clé de l’application",
+    "it": "Prepara la chiave dell’applicazione",
+    "es": "Preparar clave de aplicación"
+  },
+  "Datenbank konfigurieren": {
+    "en": "Configure database",
+    "fr": "Configurer la base de données",
+    "it": "Configura database",
+    "es": "Configurar base de datos"
+  },
+  "API und CORS konfigurieren": {
+    "en": "Configure API and CORS",
+    "fr": "Configurer l’API et CORS",
+    "it": "Configura API e CORS",
+    "es": "Configurar API y CORS"
+  },
+  "Migrationen ausführen": {
+    "en": "Run migrations",
+    "fr": "Exécuter les migrations",
+    "it": "Esegui migrazioni",
+    "es": "Ejecutar migraciones"
+  },
+  "Erweiterungen vorbereiten": {
+    "en": "Prepare extensions",
+    "fr": "Préparer les extensions",
+    "it": "Prepara estensioni",
+    "es": "Preparar extensiones"
+  },
+  "Administratorkonto einrichten": {
+    "en": "Set up administrator account",
+    "fr": "Configurer le compte administrateur",
+    "it": "Configura account amministratore",
+    "es": "Configurar cuenta de administrador"
+  },
+  "Artisan Runner aktivieren": {
+    "en": "Enable Artisan Runner",
+    "fr": "Activer Artisan Runner",
+    "it": "Attiva Artisan Runner",
+    "es": "Activar Artisan Runner"
+  },
+  "Storage-Link erstellen": {
+    "en": "Create storage link",
+    "fr": "Créer le lien de stockage",
+    "it": "Crea collegamento di archiviazione",
+    "es": "Crear enlace de almacenamiento"
+  },
+  "Brain-Graph erzeugen": {
+    "en": "Generate Brain graph",
+    "fr": "Générer le graphe Brain",
+    "it": "Genera grafo Brain",
+    "es": "Generar grafo Brain"
+  },
+  "Adressen und Abschluss": {
+    "en": "Addresses and completion",
+    "fr": "Adresses et finalisation",
+    "it": "Indirizzi e completamento",
+    "es": "Direcciones y finalización"
+  },
+  "Schritt wird ausgeführt": {
+    "en": "Running step",
+    "fr": "Étape en cours",
+    "it": "Passaggio in esecuzione",
+    "es": "Ejecutando paso"
+  },
+  "Schritt läuft": {
+    "en": "Step running",
+    "fr": "Étape en cours",
+    "it": "Passaggio in corso",
+    "es": "Paso en curso"
+  },
+  "Laufzeit: 0 s": {
+    "en": "Elapsed: 0 s",
+    "fr": "Durée : 0 s",
+    "it": "Tempo trascorso: 0 s",
+    "es": "Tiempo transcurrido: 0 s"
+  },
+  "Einrichtung gesperrt": {
+    "en": "Setup locked",
+    "fr": "Configuration verrouillée",
+    "it": "Configurazione bloccata",
+    "es": "Configuración bloqueada"
+  },
+  "Nur public/ öffentlich ausliefern. Die Freigabedatei gehört in das darüberliegende Projektverzeichnis.": {
+    "en": "Serve only public/. Keep the access file in the project directory above it.",
+    "fr": "Seul public/ doit être accessible. Placez le fichier d’accès dans le répertoire du projet au-dessus.",
+    "it": "Pubblica solo public/. Conserva il file di accesso nella directory del progetto superiore.",
+    "es": "Publica solo public/. Guarda el archivo de acceso en el directorio superior del proyecto."
+  },
+  "Nach Abschluss bleibt der Assistent gesperrt; die Anwendung läuft weiter.": {
+    "en": "The wizard stays locked after completion; the application keeps running.",
+    "fr": "L’assistant reste verrouillé après la finalisation ; l’application continue de fonctionner.",
+    "it": "La procedura rimane bloccata dopo il completamento; l’applicazione continua a funzionare.",
+    "es": "El asistente queda bloqueado al finalizar; la aplicación sigue funcionando."
+  },
+  "Anmelden": {
+    "en": "Sign in",
+    "fr": "Se connecter",
+    "it": "Accedi",
+    "es": "Iniciar sesión"
+  },
+  "Den Schlüssel aus .setup-access eingeben. Er ist unabhängig vom Administratorkonto.": {
+    "en": "Enter the key from .setup-access. It is separate from the administrator account.",
+    "fr": "Saisissez la clé du fichier .setup-access. Elle est indépendante du compte administrateur.",
+    "it": "Inserisci la chiave di .setup-access. È indipendente dall’account amministratore.",
+    "es": "Introduce la clave de .setup-access. Es independiente de la cuenta de administrador."
+  },
+  "Zugangsschlüssel": {
+    "en": "Access key",
+    "fr": "Clé d’accès",
+    "it": "Chiave di accesso",
+    "es": "Clave de acceso"
+  },
+  "Einrichtung öffnen": {
+    "en": "Open setup",
+    "fr": "Ouvrir la configuration",
+    "it": "Apri configurazione",
+    "es": "Abrir configuración"
+  },
+  "Einrichtungsschritte": {
+    "en": "Setup steps",
+    "fr": "Étapes de configuration",
+    "it": "Passaggi di configurazione",
+    "es": "Pasos de configuración"
+  },
+  "offen": {
+    "en": "pending",
+    "fr": "en attente",
+    "it": "da eseguire",
+    "es": "pendiente"
+  },
+  "erledigt": {
+    "en": "completed",
+    "fr": "terminé",
+    "it": "completato",
+    "es": "completado"
+  },
+  "übersprungen": {
+    "en": "skipped",
+    "fr": "ignoré",
+    "it": "saltato",
+    "es": "omitido"
+  },
+  "Composer installiert Pakete aus dem Lockfile einschließlich Entwicklungspaketen. Laravel-Hooks folgen bei den Erweiterungen.": {
+    "en": "Composer installs locked packages, including development dependencies. Laravel hooks run in the extensions step.",
+    "fr": "Composer installe les paquets verrouillés, dont les dépendances de développement. Les hooks Laravel suivent à l’étape des extensions.",
+    "it": "Composer installa i pacchetti del lockfile, incluse le dipendenze di sviluppo. Gli hook Laravel seguono nel passaggio delle estensioni.",
+    "es": "Composer instala los paquetes del archivo de bloqueo, incluidas las dependencias de desarrollo. Los hooks de Laravel se ejecutan en las extensiones."
+  },
+  "Prozessausführung": {
+    "en": "Process execution",
+    "fr": "Exécution de processus",
+    "it": "Esecuzione processi",
+    "es": "Ejecución de procesos"
+  },
+  "SQLite-Treiber": {
+    "en": "SQLite driver",
+    "fr": "Pilote SQLite",
+    "it": "Driver SQLite",
+    "es": "Controlador SQLite"
+  },
+  "MariaDB/MySQL-Treiber": {
+    "en": "MariaDB/MySQL driver",
+    "fr": "Pilote MariaDB/MySQL",
+    "it": "Driver MariaDB/MySQL",
+    "es": "Controlador MariaDB/MySQL"
+  },
+  "vendor/ vorhanden": {
+    "en": "vendor/ exists",
+    "fr": "vendor/ existe",
+    "it": "vendor/ presente",
+    "es": "vendor/ existe"
+  },
+  ".env vorhanden": {
+    "en": ".env exists",
+    "fr": ".env existe",
+    "it": ".env presente",
+    "es": ".env existe"
+  },
+  "Verfügbar": {
+    "en": "Available",
+    "fr": "Disponible",
+    "it": "Disponibile",
+    "es": "Disponible"
+  },
+  "Gesperrt": {
+    "en": "Disabled",
+    "fr": "Désactivé",
+    "it": "Disabilitato",
+    "es": "Desactivado"
+  },
+  "Fehlt": {
+    "en": "Missing",
+    "fr": "Absent",
+    "it": "Mancante",
+    "es": "Ausente"
+  },
+  "Ja": {
+    "en": "Yes",
+    "fr": "Oui",
+    "it": "Sì",
+    "es": "Sí"
+  },
+  "Nein": {
+    "en": "No",
+    "fr": "Non",
+    "it": "No",
+    "es": "No"
+  },
+  "PHP-CLI, Composer und proc_open müssen verfügbar sein. Bei hochgeladenem vendor/ überspringen. Installation kann mehrere Minuten dauern.": {
+    "en": "PHP CLI, Composer and proc_open must be available. Skip if vendor/ is already uploaded. Installation may take several minutes.",
+    "fr": "PHP CLI, Composer et proc_open doivent être disponibles. Ignorez cette étape si vendor/ est déjà téléversé. L’installation peut prendre plusieurs minutes.",
+    "it": "PHP CLI, Composer e proc_open devono essere disponibili. Salta se vendor/ è già caricato. L’installazione può richiedere diversi minuti.",
+    "es": "PHP CLI, Composer y proc_open deben estar disponibles. Omite el paso si vendor/ ya está subido. La instalación puede tardar varios minutos."
+  },
+  "Ermittelte PHP-CLI": {
+    "en": "Detected PHP CLI",
+    "fr": "PHP CLI détecté",
+    "it": "PHP CLI rilevato",
+    "es": "PHP CLI detectado"
+  },
+  "Eine fehlende .env wird aus der sicheren Vorlage erstellt. Bestehende Werte bleiben erhalten.": {
+    "en": "A missing .env is created from the safe template. Existing values are preserved.",
+    "fr": "Un fichier .env absent est créé à partir du modèle sécurisé. Les valeurs existantes sont conservées.",
+    "it": "Il file .env mancante viene creato dal modello sicuro. I valori esistenti vengono mantenuti.",
+    "es": "Se crea el archivo .env ausente desde la plantilla segura. Se conservan los valores existentes."
+  },
+  "Caches leeren, damit die aktuelle .env verwendet wird.": {
+    "en": "Clear caches so the current .env is used.",
+    "fr": "Videz les caches pour utiliser le fichier .env actuel.",
+    "it": "Svuota le cache per usare il file .env attuale.",
+    "es": "Vacía las cachés para usar el archivo .env actual."
+  },
+  "Fehlt der Anwendungsschlüssel, wird er erzeugt. Ein bestehender Schlüssel bleibt erhalten.": {
+    "en": "Generate the application key if missing. Preserve an existing key.",
+    "fr": "Générez la clé d’application si elle manque. Conservez une clé existante.",
+    "it": "Genera la chiave dell’applicazione se manca. Mantieni una chiave esistente.",
+    "es": "Genera la clave de aplicación si falta. Conserva una clave existente."
+  },
+  "Verbindung prüfen und speichern. Neue Datenbanken anlegen; vorhandene Daten behalten. MariaDB/MySQL benötigt einen laufenden Server; Neuanlage braucht CREATE-Rechte.": {
+    "en": "Test and save the connection. Create new databases; preserve existing data. MariaDB/MySQL needs a running server; creation requires CREATE privileges.",
+    "fr": "Testez et enregistrez la connexion. Créez de nouvelles bases ; conservez les données existantes. MariaDB/MySQL nécessite un serveur actif et des droits CREATE pour la création.",
+    "it": "Verifica e salva la connessione. Crea nuovi database; conserva i dati esistenti. MariaDB/MySQL richiede un server attivo e privilegi CREATE per la creazione.",
+    "es": "Prueba y guarda la conexión. Crea bases nuevas; conserva los datos existentes. MariaDB/MySQL necesita un servidor activo y permisos CREATE para la creación."
+  },
+  "Datenbanktyp": {
+    "en": "Database type",
+    "fr": "Type de base de données",
+    "it": "Tipo di database",
+    "es": "Tipo de base de datos"
+  },
+  "Vorhandene oder neue Datenbank?": {
+    "en": "Existing or new database?",
+    "fr": "Base existante ou nouvelle ?",
+    "it": "Database esistente o nuovo?",
+    "es": "¿Base de datos existente o nueva?"
+  },
+  "Vorhandene Datenbank": {
+    "en": "Existing database",
+    "fr": "Base existante",
+    "it": "Database esistente",
+    "es": "Base de datos existente"
+  },
+  "Neue Datenbank anlegen": {
+    "en": "Create new database",
+    "fr": "Créer une base",
+    "it": "Crea nuovo database",
+    "es": "Crear base de datos"
+  },
+  "SQLite: Datei innerhalb von database/ (.sqlite)": {
+    "en": "SQLite: file within database/ (.sqlite)",
+    "fr": "SQLite : fichier dans database/ (.sqlite)",
+    "it": "SQLite: file in database/ (.sqlite)",
+    "es": "SQLite: archivo en database/ (.sqlite)"
+  },
+  "MariaDB / MySQL: Verbindungsdaten": {
+    "en": "MariaDB / MySQL: connection details",
+    "fr": "MariaDB / MySQL : connexion",
+    "it": "MariaDB / MySQL: connessione",
+    "es": "MariaDB / MySQL: conexión"
+  },
+  "Host": {
+    "en": "Host",
+    "fr": "Hôte",
+    "it": "Host",
+    "es": "Host"
+  },
+  "Port": {
+    "en": "Port",
+    "fr": "Port",
+    "it": "Porta",
+    "es": "Puerto"
+  },
+  "Datenbankname": {
+    "en": "Database name",
+    "fr": "Nom de la base",
+    "it": "Nome database",
+    "es": "Nombre de la base de datos"
+  },
+  "Benutzer": {
+    "en": "Username",
+    "fr": "Utilisateur",
+    "it": "Nome utente",
+    "es": "Usuario"
+  },
+  "Passwort (bei Änderung erneut eingeben)": {
+    "en": "Password (enter again when changing)",
+    "fr": "Mot de passe (à ressaisir lors d’une modification)",
+    "it": "Password (reinserire per modifiche)",
+    "es": "Contraseña (introducir de nuevo al cambiar)"
+  },
+  "Neue Datenbanken bleiben bei späteren Fehlern erhalten. Passwörter werden nicht ins Formular übernommen.": {
+    "en": "New databases remain after later errors. Passwords are not filled back into the form.",
+    "fr": "Les nouvelles bases restent en place après une erreur ultérieure. Les mots de passe ne sont pas réaffichés.",
+    "it": "I nuovi database rimangono dopo errori successivi. Le password non vengono reinserite nel modulo.",
+    "es": "Las bases nuevas se conservan tras errores posteriores. Las contraseñas no se rellenan de nuevo."
+  },
+  "API und Frontend benötigen denselben Host und dasselbe Schema. Verschiedene Ports sind möglich. Frontend muss Cookies, CSRF und Credentials mitsenden.": {
+    "en": "API and frontend need the same host and scheme. Different ports are allowed. The frontend must send cookies, CSRF and credentials.",
+    "fr": "L’API et le frontend doivent partager l’hôte et le schéma. Des ports différents sont possibles. Le frontend doit envoyer cookies, CSRF et credentials.",
+    "it": "API e frontend richiedono lo stesso host e schema. Sono consentite porte diverse. Il frontend deve inviare cookie, CSRF e credenziali.",
+    "es": "API y frontend necesitan el mismo host y esquema. Se permiten puertos distintos. El frontend debe enviar cookies, CSRF y credenciales."
+  },
+  "API-URL": {
+    "en": "API URL",
+    "fr": "URL de l’API",
+    "it": "URL API",
+    "es": "URL de la API"
+  },
+  "Frontend-Origin": {
+    "en": "Frontend origin",
+    "fr": "Origine du frontend",
+    "it": "Origine frontend",
+    "es": "Origen del frontend"
+  },
+  "Migrationen auf diesem Ziel ausführen, ohne die Datenbank zurückzusetzen.": {
+    "en": "Run migrations on this target without resetting the database.",
+    "fr": "Exécutez les migrations sur cette cible sans réinitialiser la base.",
+    "it": "Esegui migrazioni su questa destinazione senza reimpostare il database.",
+    "es": "Ejecuta migraciones en este destino sin reiniciar la base de datos."
+  },
+  "Pakete registrieren, Filament-Assets veröffentlichen und Permission-Cache leeren. Zuerst Migrationen ausführen.": {
+    "en": "Discover packages, publish Filament assets and clear the permission cache. Run migrations first.",
+    "fr": "Découvrez les paquets, publiez les ressources Filament et videz le cache des permissions. Exécutez d’abord les migrations.",
+    "it": "Registra pacchetti, pubblica risorse Filament e svuota la cache dei permessi. Esegui prima le migrazioni.",
+    "es": "Registra paquetes, publica recursos Filament y vacía la caché de permisos. Ejecuta primero las migraciones."
+  },
+  "Filament- und Runner-Zugang vergeben. Bei vorhandener E-Mail bleiben Name und Passwort erhalten.": {
+    "en": "Grant Filament and Runner access. For an existing email, preserve the name and password.",
+    "fr": "Accordez l’accès à Filament et Runner. Pour une adresse existante, conservez nom et mot de passe.",
+    "it": "Concedi accesso a Filament e Runner. Per un’email esistente, mantieni nome e password.",
+    "es": "Concede acceso a Filament y Runner. Si el correo existe, conserva nombre y contraseña."
+  },
+  "E-Mail": {
+    "en": "Email",
+    "fr": "E-mail",
+    "it": "Email",
+    "es": "Correo electrónico"
+  },
+  "Name (nur für neues Konto)": {
+    "en": "Name (new account only)",
+    "fr": "Nom (nouveau compte uniquement)",
+    "it": "Nome (solo nuovo account)",
+    "es": "Nombre (solo cuenta nueva)"
+  },
+  "Passwort für neues Konto (mindestens 12 Zeichen)": {
+    "en": "New account password (at least 12 characters)",
+    "fr": "Mot de passe du nouveau compte (12 caractères minimum)",
+    "it": "Password nuovo account (almeno 12 caratteri)",
+    "es": "Contraseña de cuenta nueva (mínimo 12 caracteres)"
+  },
+  "Passwort bestätigen": {
+    "en": "Confirm password",
+    "fr": "Confirmer le mot de passe",
+    "it": "Conferma password",
+    "es": "Confirmar contraseña"
+  },
+  "Kontoanlage": {
+    "en": "Account creation",
+    "fr": "Création du compte",
+    "it": "Creazione account",
+    "es": "Creación de cuenta"
+  },
+  "Nur bestehendes Konto verwenden": {
+    "en": "Use an existing account only",
+    "fr": "Utiliser uniquement un compte existant",
+    "it": "Usa solo un account esistente",
+    "es": "Usar solo una cuenta existente"
+  },
+  "Falls nötig, neues Konto anlegen": {
+    "en": "Create a new account if needed",
+    "fr": "Créer un compte si nécessaire",
+    "it": "Crea un account se necessario",
+    "es": "Crear una cuenta nueva si es necesario"
+  },
+  "Runner aktivieren. Anmeldung und Runner-Recht bleiben erforderlich.": {
+    "en": "Enable Runner. Sign-in and Runner permission remain required.",
+    "fr": "Activez Runner. Connexion et permission Runner restent nécessaires.",
+    "it": "Attiva Runner. Accesso e permesso Runner restano necessari.",
+    "es": "Activa Runner. Siguen siendo necesarios el inicio de sesión y el permiso Runner."
+  },
+  "Öffentlichen Link für zukünftige Media-Dateien erstellen. Windows kann zusätzliche Symlink-Rechte benötigen.": {
+    "en": "Create the public link for future media files. Windows may require additional symlink privileges.",
+    "fr": "Créez le lien public pour les futurs médias. Windows peut nécessiter des droits de lien symbolique.",
+    "it": "Crea il collegamento pubblico per futuri file multimediali. Windows può richiedere privilegi aggiuntivi per i symlink.",
+    "es": "Crea el enlace público para futuros archivos multimedia. Windows puede requerir permisos adicionales de enlaces simbólicos."
+  },
+  "Architekturgraph erzeugen. Nur mit Entwicklungspaketen und APP_ENV=local verfügbar; andernfalls überspringen.": {
+    "en": "Generate the architecture graph. Requires development packages and APP_ENV=local; otherwise skip.",
+    "fr": "Générez le graphe d’architecture. Dépendances de développement et APP_ENV=local requis ; sinon ignorez.",
+    "it": "Genera il grafo dell’architettura. Richiede pacchetti di sviluppo e APP_ENV=local; altrimenti salta.",
+    "es": "Genera el grafo de arquitectura. Requiere paquetes de desarrollo y APP_ENV=local; de lo contrario, omite el paso."
+  },
+  "Abschluss sperrt den Assistenten und entfernt den Zugangsschlüssel. Übersprungene Schritte bleiben offen. Server, Queue und Backup werden nicht gestartet.": {
+    "en": "Completion locks the wizard and removes the access key. Skipped steps remain pending. Server, queue and backup are not started.",
+    "fr": "La finalisation verrouille l’assistant et supprime la clé. Les étapes ignorées restent ouvertes. Serveur, file d’attente et sauvegarde ne démarrent pas.",
+    "it": "Il completamento blocca la procedura e rimuove la chiave. I passaggi saltati restano aperti. Server, coda e backup non vengono avviati.",
+    "es": "La finalización bloquea el asistente y elimina la clave. Los pasos omitidos siguen pendientes. No se inician servidor, cola ni copia de seguridad."
+  },
+  "Schritt ausführen": {
+    "en": "Execute step",
+    "fr": "Exécuter l’étape",
+    "it": "Esegui passaggio",
+    "es": "Ejecutar paso"
+  },
+  "Abschließen und sperren": {
+    "en": "Finish and lock",
+    "fr": "Terminer et verrouiller",
+    "it": "Completa e blocca",
+    "es": "Finalizar y bloquear"
+  },
+  "Überspringen": {
+    "en": "Skip",
+    "fr": "Ignorer",
+    "it": "Salta",
+    "es": "Omitir"
+  },
+  "Adressübersicht": {
+    "en": "Address overview",
+    "fr": "Liste des adresses",
+    "it": "Riepilogo indirizzi",
+    "es": "Resumen de direcciones"
+  },
+  "Adressen verwenden Host und Port dieses Aufrufs. Verfügbarkeit hängt von Einrichtung und Webserver ab.": {
+    "en": "Addresses use this request’s host and port. Availability depends on setup and the web server.",
+    "fr": "Les adresses utilisent l’hôte et le port de cet appel. La disponibilité dépend de la configuration et du serveur.",
+    "it": "Gli indirizzi usano host e porta di questa richiesta. La disponibilità dipende dalla configurazione e dal server.",
+    "es": "Las direcciones usan el host y puerto de esta solicitud. La disponibilidad depende de la configuración y del servidor."
+  },
+  "API-Status": {
+    "en": "API status",
+    "fr": "État de l’API",
+    "it": "Stato API",
+    "es": "Estado de la API"
+  },
+  "CSRF-Cookie": {
+    "en": "CSRF cookie",
+    "fr": "Cookie CSRF",
+    "it": "Cookie CSRF",
+    "es": "Cookie CSRF"
+  },
+  "Artisan-Anmeldung": {
+    "en": "Artisan sign-in",
+    "fr": "Connexion Artisan",
+    "it": "Accesso Artisan",
+    "es": "Inicio de sesión Artisan"
+  },
+  "Entwicklungspakete erforderlich": {
+    "en": "Development packages required",
+    "fr": "Dépendances de développement requises",
+    "it": "Pacchetti di sviluppo richiesti",
+    "es": "Paquetes de desarrollo necesarios"
+  },
+  "Nicht konfiguriert": {
+    "en": "Not configured",
+    "fr": "Non configuré",
+    "it": "Non configurato",
+    "es": "Sin configurar"
+  },
+  "Abmelden": {
+    "en": "Sign out",
+    "fr": "Se déconnecter",
+    "it": "Esci",
+    "es": "Cerrar sesión"
+  },
+  "Ausgeführte Änderungen bleiben bei Abbruch bestehen. Anleitung: docs/SETUP.md. Kopia und externe Dienste separat einrichten.": {
+    "en": "Applied changes remain after interruption. Guide: docs/SETUP.md. Set up Kopia and external services separately.",
+    "fr": "Les modifications restent après interruption. Guide : docs/SETUP.md. Configurez Kopia et les services externes séparément.",
+    "it": "Le modifiche restano dopo un’interruzione. Guida: docs/SETUP.md. Configura separatamente Kopia e servizi esterni.",
+    "es": "Los cambios permanecen tras una interrupción. Guía: docs/SETUP.md. Configura Kopia y servicios externos por separado."
+  },
+  "Verbindung zum Server wird aufgebaut …": {
+    "en": "Connecting to the server …",
+    "fr": "Connexion au serveur …",
+    "it": "Connessione al server …",
+    "es": "Conectando con el servidor …"
+  },
+  "Bitte die Seite geöffnet lassen.": {
+    "en": "Please keep this page open.",
+    "fr": "Veuillez laisser cette page ouverte.",
+    "it": "Mantieni aperta questa pagina.",
+    "es": "Mantén esta página abierta."
+  },
+  "Laufzeit: {elapsed} s · letzte Statusmeldung vor {silence} s": {
+    "en": "Elapsed: {elapsed} s · last update {silence} s ago",
+    "fr": "Durée : {elapsed} s · dernière mise à jour il y a {silence} s",
+    "it": "Tempo: {elapsed} s · ultimo aggiornamento {silence} s fa",
+    "es": "Tiempo: {elapsed} s · última actualización hace {silence} s"
+  },
+  "Zurzeit keine neue Statusmeldung. Server oder Verbindung könnten warten; der Prozess kann weiterlaufen. Bitte nicht erneut starten.": {
+    "en": "No new status update. The server or connection may be waiting; the process may still be running. Do not restart.",
+    "fr": "Aucune nouvelle mise à jour. Le serveur ou la connexion peut attendre ; le processus peut continuer. Ne relancez pas.",
+    "it": "Nessun nuovo aggiornamento. Server o connessione potrebbero essere in attesa; il processo può continuare. Non riavviare.",
+    "es": "No hay nuevas actualizaciones. El servidor o la conexión pueden estar esperando; el proceso puede seguir activo. No reinicies."
+  },
+  "Der Server bearbeitet diesen Schritt.": {
+    "en": "The server is processing this step.",
+    "fr": "Le serveur traite cette étape.",
+    "it": "Il server sta elaborando questo passaggio.",
+    "es": "El servidor está procesando este paso."
+  },
+  "Prozess aktiv · keine neue Prozessausgabe seit {seconds} s. Das kann bei längeren Aufgaben normal sein.": {
+    "en": "Process active · no new output for {seconds} s. This can be normal for longer tasks.",
+    "fr": "Processus actif · aucune nouvelle sortie depuis {seconds} s. Cela peut être normal pour une tâche longue.",
+    "it": "Processo attivo · nessun nuovo output da {seconds} s. Può essere normale per attività lunghe.",
+    "es": "Proceso activo · sin nueva salida desde hace {seconds} s. Puede ser normal en tareas largas."
+  },
+  "Statusverbindung unterbrochen": {
+    "en": "Status connection interrupted",
+    "fr": "Connexion de suivi interrompue",
+    "it": "Connessione di stato interrotta",
+    "es": "Conexión de estado interrumpida"
+  },
+  "Der Schritt kann auf dem Server noch laufen. Nicht erneut absenden. Seite später neu laden; die Serversperre verhindert parallele Ausführung.": {
+    "en": "The step may still be running on the server. Do not submit again. Reload later; the server lock prevents parallel execution.",
+    "fr": "L’étape peut continuer sur le serveur. Ne renvoyez pas le formulaire. Rechargez plus tard ; le verrou évite une exécution parallèle.",
+    "it": "Il passaggio può continuare sul server. Non inviare di nuovo. Ricarica più tardi; il blocco impedisce esecuzioni parallele.",
+    "es": "El paso puede seguir activo en el servidor. No lo envíes de nuevo. Recarga más tarde; el bloqueo evita ejecuciones paralelas."
+  },
+  "{command} läuft": {
+    "en": "{command} running",
+    "fr": "{command} en cours",
+    "it": "{command} in esecuzione",
+    "es": "{command} en ejecución"
+  },
+  "{command} abgeschlossen": {
+    "en": "{command} completed",
+    "fr": "{command} terminé",
+    "it": "{command} completato",
+    "es": "{command} completado"
+  },
+  "{command} fehlgeschlagen (Exit-Code {code}). {reason}": {
+    "en": "{command} failed (exit code {code}). {reason}",
+    "fr": "Échec de {command} (code {code}). {reason}",
+    "it": "{command} non riuscito (codice {code}). {reason}",
+    "es": "{command} falló (código {code}). {reason}"
+  },
+  "Administratorkonto": {
+    "en": "Administrator account",
+    "fr": "Compte administrateur",
+    "it": "Account amministratore",
+    "es": "Cuenta de administrador"
+  },
+  "Composer/Admin-Einrichtung": {
+    "en": "Composer/admin setup",
+    "fr": "Configuration Composer/admin",
+    "it": "Configurazione Composer/admin",
+    "es": "Configuración Composer/admin"
+  },
+  "Schritt wird gestartet.": {
+    "en": "Starting step.",
+    "fr": "Démarrage de l’étape.",
+    "it": "Avvio del passaggio.",
+    "es": "Iniciando paso."
+  },
+  "Angemeldet. Schritte ausführen oder überspringen.": {
+    "en": "Signed in. Execute or skip steps.",
+    "fr": "Connecté. Exécutez ou ignorez les étapes.",
+    "it": "Accesso effettuato. Esegui o salta i passaggi.",
+    "es": "Sesión iniciada. Ejecuta u omite los pasos."
+  },
+  "Abgemeldet.": {
+    "en": "Signed out.",
+    "fr": "Déconnecté.",
+    "it": "Disconnesso.",
+    "es": "Sesión cerrada."
+  },
+  "Schritt übersprungen. Einstellungen bleiben erhalten.": {
+    "en": "Step skipped. Settings preserved.",
+    "fr": "Étape ignorée. Paramètres conservés.",
+    "it": "Passaggio saltato. Impostazioni conservate.",
+    "es": "Paso omitido. Ajustes conservados."
+  },
+  "PHP 8.3 oder neuer erforderlich.": {
+    "en": "PHP 8.3 or later required.",
+    "fr": "PHP 8.3 ou ultérieur requis.",
+    "it": "Richiesto PHP 8.3 o successivo.",
+    "es": "Se requiere PHP 8.3 o posterior."
+  },
+  "Ungültiger Host in der Setup-Adresse.": {
+    "en": "Invalid host in the setup address.",
+    "fr": "Hôte invalide dans l’adresse de configuration.",
+    "it": "Host non valido nell’indirizzo di configurazione.",
+    "es": "Host no válido en la dirección de configuración."
+  },
+  "Browser-Einrichtung außerhalb von localhost nur über HTTPS aufrufen.": {
+    "en": "Use HTTPS for browser setup outside localhost.",
+    "fr": "Utilisez HTTPS pour la configuration hors localhost.",
+    "it": "Usa HTTPS per la configurazione al di fuori di localhost.",
+    "es": "Usa HTTPS para configurar fuera de localhost."
+  },
+  "PHP-Sitzung konnte nicht gestartet werden. Hosting-Konfiguration prüfen.": {
+    "en": "PHP session could not start. Check hosting configuration.",
+    "fr": "Impossible de démarrer la session PHP. Vérifiez l’hébergement.",
+    "it": "Impossibile avviare la sessione PHP. Verifica l’hosting.",
+    "es": "No se pudo iniciar la sesión PHP. Revisa el alojamiento."
+  },
+  "Ungültiges Formular.": {
+    "en": "Invalid form.",
+    "fr": "Formulaire invalide.",
+    "it": "Modulo non valido.",
+    "es": "Formulario no válido."
+  },
+  "Ein Einrichtungsschritt läuft bereits. Bitte warten.": {
+    "en": "A setup step is already running. Please wait.",
+    "fr": "Une étape est déjà en cours. Veuillez patienter.",
+    "it": "Un passaggio è già in corso. Attendi.",
+    "es": "Ya se está ejecutando un paso. Espera."
+  },
+  "Formularschutz ungültig. Seite neu laden.": {
+    "en": "Invalid form token. Reload the page.",
+    "fr": "Jeton de formulaire invalide. Rechargez la page.",
+    "it": "Token del modulo non valido. Ricarica la pagina.",
+    "es": "Token de formulario no válido. Recarga la página."
+  },
+  "Zugangsschlüssel ungültig.": {
+    "en": "Invalid access key.",
+    "fr": "Clé d’accès invalide.",
+    "it": "Chiave di accesso non valida.",
+    "es": "Clave de acceso no válida."
+  },
+  "Bitte erneut anmelden.": {
+    "en": "Please sign in again.",
+    "fr": "Veuillez vous reconnecter.",
+    "it": "Accedi nuovamente.",
+    "es": "Vuelve a iniciar sesión."
+  },
+  "Unbekannter Einrichtungsschritt.": {
+    "en": "Unknown setup step.",
+    "fr": "Étape inconnue.",
+    "it": "Passaggio sconosciuto.",
+    "es": "Paso desconocido."
+  },
+  "Unbekannte Formularaktion.": {
+    "en": "Unknown form action.",
+    "fr": "Action inconnue.",
+    "it": "Azione sconosciuta.",
+    "es": "Acción desconocida."
+  },
+  "Datenbankverbindung oder Anlage fehlgeschlagen. Zugangsdaten, Server und Rechte prüfen. Eine bereits angelegte Datenbank bleibt erhalten.": {
+    "en": "Database connection or creation failed. Check credentials, server and permissions. An already created database is preserved.",
+    "fr": "Connexion ou création de base impossible. Vérifiez identifiants, serveur et droits. Une base déjà créée est conservée.",
+    "it": "Connessione o creazione database non riuscita. Verifica credenziali, server e permessi. Un database già creato viene conservato.",
+    "es": "Falló la conexión o creación de la base. Revisa credenciales, servidor y permisos. Una base ya creada se conserva."
+  },
+  "Einrichtung fehlgeschlagen. PHP-Erweiterungen, Schreibrechte und Hosting-Konfiguration prüfen. Zugangsdaten werden nicht ausgegeben.": {
+    "en": "Setup failed. Check PHP extensions, write permissions and hosting settings. Credentials are not displayed.",
+    "fr": "Configuration impossible. Vérifiez extensions PHP, droits d’écriture et hébergement. Les identifiants ne sont pas affichés.",
+    "it": "Configurazione non riuscita. Verifica estensioni PHP, permessi di scrittura e hosting. Le credenziali non vengono mostrate.",
+    "es": "La configuración falló. Revisa extensiones PHP, permisos de escritura y alojamiento. No se muestran credenciales."
+  },
+  "Die Browser-Einrichtung ist abgeschlossen und gesperrt.": {
+    "en": "Browser setup is completed and locked.",
+    "fr": "La configuration est terminée et verrouillée.",
+    "it": "La configurazione è completata e bloccata.",
+    "es": "La configuración está finalizada y bloqueada."
+  },
+  "Browser-Einrichtung gesperrt. Bitte zuerst eine Datei .setup-access im Projektverzeichnis mit einem eigenen zufälligen Zugangsschlüssel (mindestens 32 Zeichen) anlegen. Anleitung: docs/SETUP.md.": {
+    "en": "Browser setup locked. Create .setup-access in the project directory with your own random access key (at least 32 characters). Guide: docs/SETUP.md.",
+    "fr": "Configuration verrouillée. Créez .setup-access dans le projet avec votre propre clé aléatoire (32 caractères minimum). Guide : docs/SETUP.md.",
+    "it": "Configurazione bloccata. Crea .setup-access nella directory del progetto con una chiave casuale personale (almeno 32 caratteri). Guida: docs/SETUP.md.",
+    "es": "Configuración bloqueada. Crea .setup-access en el proyecto con tu propia clave aleatoria (mínimo 32 caracteres). Guía: docs/SETUP.md."
+  },
+  "Zugang oder Formularschutz fehlt. Bitte erneut anmelden.": {
+    "en": "Access or form protection missing. Sign in again.",
+    "fr": "Accès ou protection du formulaire absent. Reconnectez-vous.",
+    "it": "Accesso o protezione del modulo mancante. Accedi nuovamente.",
+    "es": "Falta acceso o protección del formulario. Inicia sesión de nuevo."
+  },
+  "Zu viele Anmeldeversuche. Bitte nach 15 Minuten erneut versuchen.": {
+    "en": "Too many sign-in attempts. Try again after 15 minutes.",
+    "fr": "Trop de tentatives de connexion. Réessayez après 15 minutes.",
+    "it": "Troppi tentativi di accesso. Riprova dopo 15 minuti.",
+    "es": "Demasiados intentos de inicio de sesión. Reintenta tras 15 minutos."
+  },
+  "Anmeldeschutz konnte nicht gespeichert werden. Schreibrechte prüfen.": {
+    "en": "Sign-in protection could not be saved. Check write permissions.",
+    "fr": "Impossible d’enregistrer la protection de connexion. Vérifiez les droits d’écriture.",
+    "it": "Impossibile salvare la protezione di accesso. Verifica i permessi di scrittura.",
+    "es": "No se pudo guardar la protección de acceso. Revisa permisos de escritura."
+  },
+  "Composer-Abhängigkeiten installiert. Weiter mit .env.": {
+    "en": "Composer dependencies installed. Continue with .env.",
+    "fr": "Dépendances Composer installées. Passez à .env.",
+    "it": "Dipendenze Composer installate. Continua con .env.",
+    "es": "Dependencias Composer instaladas. Continúa con .env."
+  },
+  "Vorhandene .env bleibt erhalten.": {
+    "en": "Existing .env preserved.",
+    "fr": "Fichier .env existant conservé.",
+    "it": "File .env esistente mantenuto.",
+    "es": "Se conserva el archivo .env existente."
+  },
+  ".env konnte nicht erstellt werden.": {
+    "en": "Could not create .env.",
+    "fr": "Impossible de créer .env.",
+    "it": "Impossibile creare .env.",
+    "es": "No se pudo crear .env."
+  },
+  ".env wurde nicht vollständig geschrieben. Datei prüfen.": {
+    "en": ".env was not written completely. Check the file.",
+    "fr": "Écriture incomplète de .env. Vérifiez le fichier.",
+    "it": "Scrittura di .env incompleta. Verifica il file.",
+    "es": "No se escribió .env por completo. Revisa el archivo."
+  },
+  ".env aus der sicheren Projektvorlage erstellt.": {
+    "en": ".env created from the safe project template.",
+    "fr": ".env créé à partir du modèle sécurisé.",
+    "it": ".env creato dal modello sicuro del progetto.",
+    "es": ".env creado desde la plantilla segura."
+  },
+  "Bitte zuerst .env vorbereiten.": {
+    "en": "Prepare .env first.",
+    "fr": "Préparez d’abord .env.",
+    "it": "Prepara prima .env.",
+    "es": "Prepara primero .env."
+  },
+  "Konfigurations- und Routencache geleert.": {
+    "en": "Configuration and route caches cleared.",
+    "fr": "Caches de configuration et de routes vidés.",
+    "it": "Cache di configurazione e route svuotate.",
+    "es": "Cachés de configuración y rutas vaciadas."
+  },
+  "Bitte zuerst den Konfigurationscache leeren.": {
+    "en": "Clear the configuration cache first.",
+    "fr": "Videz d’abord le cache de configuration.",
+    "it": "Svuota prima la cache di configurazione.",
+    "es": "Vacía primero la caché de configuración."
+  },
+  "Migrationen abgeschlossen.": {
+    "en": "Migrations completed.",
+    "fr": "Migrations terminées.",
+    "it": "Migrazioni completate.",
+    "es": "Migraciones completadas."
+  },
+  "Pakete, Filament-Assets und Permission-Cache vorbereitet.": {
+    "en": "Packages, Filament assets and permission cache prepared.",
+    "fr": "Paquets, ressources Filament et cache des permissions préparés.",
+    "it": "Pacchetti, risorse Filament e cache permessi preparati.",
+    "es": "Paquetes, recursos Filament y caché de permisos preparados."
+  },
+  "Öffentlicher Storage-Link erstellt.": {
+    "en": "Public storage link created.",
+    "fr": "Lien de stockage public créé.",
+    "it": "Collegamento di archiviazione pubblico creato.",
+    "es": "Enlace de almacenamiento público creado."
+  },
+  "Bitte zuerst Composer-Abhängigkeiten installieren oder vendor/ vollständig hochladen.": {
+    "en": "Install Composer dependencies or upload the complete vendor/ directory first.",
+    "fr": "Installez les dépendances Composer ou téléversez tout vendor/ d’abord.",
+    "it": "Installa prima le dipendenze Composer o carica l’intera directory vendor/.",
+    "es": "Instala primero las dependencias Composer o sube todo el directorio vendor/."
+  },
+  "Vorhandener Anwendungsschlüssel bleibt erhalten.": {
+    "en": "Existing application key preserved.",
+    "fr": "Clé d’application existante conservée.",
+    "it": "Chiave dell’applicazione esistente mantenuta.",
+    "es": "Se conserva la clave de aplicación existente."
+  },
+  "Neuer Anwendungsschlüssel gespeichert.": {
+    "en": "New application key saved.",
+    "fr": "Nouvelle clé d’application enregistrée.",
+    "it": "Nuova chiave dell’applicazione salvata.",
+    "es": "Nueva clave de aplicación guardada."
+  },
+  "Datenbanktyp und vorhandene/neue Datenbank auswählen.": {
+    "en": "Select database type and existing/new database.",
+    "fr": "Choisissez le type et une base existante ou nouvelle.",
+    "it": "Seleziona tipo e database esistente o nuovo.",
+    "es": "Selecciona el tipo y una base existente o nueva."
+  },
+  "PHP-Erweiterung pdo_sqlite fehlt.": {
+    "en": "PHP extension pdo_sqlite is missing.",
+    "fr": "L’extension PHP pdo_sqlite manque.",
+    "it": "Manca l’estensione PHP pdo_sqlite.",
+    "es": "Falta la extensión PHP pdo_sqlite."
+  },
+  "Eine SQLite-Datei angeben.": {
+    "en": "Specify a SQLite file.",
+    "fr": "Indiquez un fichier SQLite.",
+    "it": "Specifica un file SQLite.",
+    "es": "Indica un archivo SQLite."
+  },
+  "Im Browser sind nur .sqlite-Dateien innerhalb von database/ erlaubt; Unterverzeichnisse müssen existieren.": {
+    "en": "Browser setup only allows .sqlite files inside database/; subdirectories must exist.",
+    "fr": "Seuls les fichiers .sqlite dans database/ sont autorisés ; les sous-répertoires doivent exister.",
+    "it": "Il browser consente solo file .sqlite in database/; le sottodirectory devono esistere.",
+    "es": "El navegador solo permite archivos .sqlite dentro de database/; los subdirectorios deben existir."
+  },
+  "SQLite-Datei existiert bereits. Vorhandene Datenbank auswählen.": {
+    "en": "SQLite file already exists. Select an existing database.",
+    "fr": "Le fichier SQLite existe déjà. Choisissez une base existante.",
+    "it": "Il file SQLite esiste già. Seleziona un database esistente.",
+    "es": "El archivo SQLite ya existe. Selecciona una base existente."
+  },
+  "SQLite-Datei konnte nicht angelegt werden.": {
+    "en": "Could not create SQLite file.",
+    "fr": "Impossible de créer le fichier SQLite.",
+    "it": "Impossibile creare il file SQLite.",
+    "es": "No se pudo crear el archivo SQLite."
+  },
+  "Vorhandene SQLite-Datei nicht gefunden.": {
+    "en": "Existing SQLite file not found.",
+    "fr": "Fichier SQLite existant introuvable.",
+    "it": "File SQLite esistente non trovato.",
+    "es": "No se encontró el archivo SQLite existente."
+  },
+  "PHP-Erweiterung pdo_mysql fehlt.": {
+    "en": "PHP extension pdo_mysql is missing.",
+    "fr": "L’extension PHP pdo_mysql manque.",
+    "it": "Manca l’estensione PHP pdo_mysql.",
+    "es": "Falta la extensión PHP pdo_mysql."
+  },
+  "Datenbankhost, Port oder Name ungültig.": {
+    "en": "Invalid database host, port or name.",
+    "fr": "Hôte, port ou nom de base invalide.",
+    "it": "Host, porta o nome database non valido.",
+    "es": "Host, puerto o nombre de base no válido."
+  },
+  "Datenbankverbindung geprüft und gespeichert. Bereits angelegte Datenbanken werden bei späteren Fehlern nicht gelöscht.": {
+    "en": "Database connection tested and saved. Created databases are not deleted after later errors.",
+    "fr": "Connexion vérifiée et enregistrée. Les bases créées ne sont pas supprimées après une erreur ultérieure.",
+    "it": "Connessione verificata e salvata. I database creati non vengono eliminati dopo errori successivi.",
+    "es": "Conexión verificada y guardada. Las bases creadas no se eliminan tras errores posteriores."
+  },
+  "HTTP(S)-Origin ohne Pfad oder Zugangsdaten angeben.": {
+    "en": "Enter an HTTP(S) origin without a path or credentials.",
+    "fr": "Saisissez une origine HTTP(S) sans chemin ni identifiants.",
+    "it": "Inserisci un’origine HTTP(S) senza percorso o credenziali.",
+    "es": "Introduce un origen HTTP(S) sin ruta ni credenciales."
+  },
+  "API und Frontend benötigen für diesen Session-Ablauf denselben Host und dasselbe Schema.": {
+    "en": "API and frontend need the same host and scheme for this session flow.",
+    "fr": "L’API et le frontend doivent partager hôte et schéma pour cette session.",
+    "it": "API e frontend richiedono lo stesso host e schema per questa sessione.",
+    "es": "API y frontend necesitan el mismo host y esquema para esta sesión."
+  },
+  "API-Adresse, CORS und Session-Cookies konfiguriert. Frontend muss Credentials und CSRF mitsenden.": {
+    "en": "API address, CORS and session cookies configured. Frontend must send credentials and CSRF.",
+    "fr": "Adresse API, CORS et cookies de session configurés. Le frontend doit envoyer credentials et CSRF.",
+    "it": "Indirizzo API, CORS e cookie di sessione configurati. Il frontend deve inviare credenziali e CSRF.",
+    "es": "Dirección API, CORS y cookies de sesión configurados. El frontend debe enviar credenciales y CSRF."
+  },
+  "Administratorkonto eingerichtet; vorhandener Name und Passwort wurden erhalten.": {
+    "en": "Administrator account configured; existing name and password preserved.",
+    "fr": "Compte administrateur configuré ; nom et mot de passe existants conservés.",
+    "it": "Account amministratore configurato; nome e password esistenti mantenuti.",
+    "es": "Cuenta de administrador configurada; nombre y contraseña existentes conservados."
+  },
+  "Artisan Runner aktiviert; Anmeldung und Runner-Recht sind erforderlich.": {
+    "en": "Artisan Runner enabled; sign-in and Runner permission required.",
+    "fr": "Artisan Runner activé ; connexion et permission Runner requises.",
+    "it": "Artisan Runner attivato; accesso e permesso Runner richiesti.",
+    "es": "Artisan Runner activado; se requieren inicio de sesión y permiso Runner."
+  },
+  "Brain-Scan ist nur in APP_ENV=local verfügbar.": {
+    "en": "Brain scan is only available with APP_ENV=local.",
+    "fr": "Le scan Brain est disponible uniquement avec APP_ENV=local.",
+    "it": "La scansione Brain è disponibile solo con APP_ENV=local.",
+    "es": "El análisis Brain solo está disponible con APP_ENV=local."
+  },
+  "Brain-Graph erzeugt.": {
+    "en": "Brain graph generated.",
+    "fr": "Graphe Brain généré.",
+    "it": "Grafo Brain generato.",
+    "es": "Grafo Brain generado."
+  },
+  "Abschlusssperre konnte nicht angelegt werden.": {
+    "en": "Could not create the completion lock.",
+    "fr": "Impossible de créer le verrou de finalisation.",
+    "it": "Impossibile creare il blocco di completamento.",
+    "es": "No se pudo crear el bloqueo de finalización."
+  },
+  "Browser-Einrichtung abgeschlossen und gesperrt. Anwendung über die angezeigten Adressen öffnen.": {
+    "en": "Browser setup completed and locked. Open the application using the listed addresses.",
+    "fr": "Configuration terminée et verrouillée. Ouvrez l’application aux adresses indiquées.",
+    "it": "Configurazione completata e bloccata. Apri l’applicazione con gli indirizzi indicati.",
+    "es": "Configuración finalizada y bloqueada. Abre la aplicación con las direcciones indicadas."
+  },
+  "Das Hosting deaktiviert proc_open. Installation und Artisan-Schritte benötigen diese PHP-Funktion.": {
+    "en": "Hosting disabled proc_open. Installation and Artisan steps require this PHP function.",
+    "fr": "L’hébergement désactive proc_open. Installation et étapes Artisan nécessitent cette fonction PHP.",
+    "it": "L’hosting ha disabilitato proc_open. Installazione e passaggi Artisan richiedono questa funzione PHP.",
+    "es": "El alojamiento desactiva proc_open. La instalación y Artisan requieren esta función PHP."
+  },
+  "Temporäre Prozessdateien konnten nicht erstellt werden.": {
+    "en": "Could not create temporary process files.",
+    "fr": "Impossible de créer les fichiers temporaires du processus.",
+    "it": "Impossibile creare file temporanei del processo.",
+    "es": "No se pudieron crear archivos temporales del proceso."
+  },
+  "Einrichtungsprozess konnte nicht gestartet werden. Prozessrechte prüfen.": {
+    "en": "Could not start setup process. Check process permissions.",
+    "fr": "Impossible de démarrer le processus. Vérifiez les droits.",
+    "it": "Impossibile avviare il processo. Verifica i permessi.",
+    "es": "No se pudo iniciar el proceso. Revisa los permisos."
+  },
+  "SETUP_PHP_BINARY verweist auf keine vorhandene PHP-CLI-Datei.": {
+    "en": "SETUP_PHP_BINARY does not point to an existing PHP CLI file.",
+    "fr": "SETUP_PHP_BINARY ne pointe pas vers un fichier PHP CLI existant.",
+    "it": "SETUP_PHP_BINARY non indica un file PHP CLI esistente.",
+    "es": "SETUP_PHP_BINARY no apunta a un archivo PHP CLI existente."
+  },
+  "PHP-CLI nicht gefunden. SETUP_PHP_BINARY als Servervariable auf die vorhandene php.exe beziehungsweise php setzen.": {
+    "en": "PHP CLI not found. Set server variable SETUP_PHP_BINARY to the existing php.exe or php.",
+    "fr": "PHP CLI introuvable. Définissez SETUP_PHP_BINARY vers php.exe ou php existant.",
+    "it": "PHP CLI non trovato. Imposta SETUP_PHP_BINARY sul file php.exe o php esistente.",
+    "es": "PHP CLI no encontrado. Configura SETUP_PHP_BINARY con el archivo php.exe o php existente."
+  },
+  "COMPOSER_BINARY verweist auf keine vorhandene Composer-Datei.": {
+    "en": "COMPOSER_BINARY does not point to an existing Composer file.",
+    "fr": "COMPOSER_BINARY ne pointe pas vers un fichier Composer existant.",
+    "it": "COMPOSER_BINARY non indica un file Composer esistente.",
+    "es": "COMPOSER_BINARY no apunta a un archivo Composer existente."
+  },
+  "Composer nicht gefunden. composer.phar neben PHP ablegen oder COMPOSER_BINARY als Servervariable auf die vorhandene Composer-PHP-Datei setzen.": {
+    "en": "Composer not found. Put composer.phar next to PHP or set COMPOSER_BINARY to the existing Composer PHP file.",
+    "fr": "Composer introuvable. Placez composer.phar à côté de PHP ou définissez COMPOSER_BINARY vers le fichier Composer PHP.",
+    "it": "Composer non trovato. Colloca composer.phar accanto a PHP o imposta COMPOSER_BINARY sul file Composer PHP.",
+    "es": "Composer no encontrado. Coloca composer.phar junto a PHP o configura COMPOSER_BINARY con el archivo Composer PHP."
+  },
+  "PDO-Datenbanktreiber fehlt in der CLI-PHP-Konfiguration.": {
+    "en": "PDO database driver missing in CLI PHP configuration.",
+    "fr": "Pilote PDO manquant dans la configuration PHP CLI.",
+    "it": "Driver PDO mancante nella configurazione PHP CLI.",
+    "es": "Falta el controlador PDO en la configuración PHP CLI."
+  },
+  "Datenbanktabellen fehlen. Zuerst die Migrationen ausführen.": {
+    "en": "Database tables missing. Run migrations first.",
+    "fr": "Tables de base manquantes. Exécutez d’abord les migrations.",
+    "it": "Tabelle database mancanti. Esegui prima le migrazioni.",
+    "es": "Faltan tablas de la base. Ejecuta primero las migraciones."
+  },
+  "SQLite-Datei fehlt oder ist für den Server nicht zugänglich.": {
+    "en": "SQLite file missing or inaccessible to the server.",
+    "fr": "Fichier SQLite absent ou inaccessible au serveur.",
+    "it": "File SQLite mancante o non accessibile al server.",
+    "es": "Archivo SQLite ausente o inaccesible para el servidor."
+  },
+  "Datenbankzugriff fehlgeschlagen. Server, Benutzer, Passwort und Rechte prüfen.": {
+    "en": "Database access failed. Check server, username, password and privileges.",
+    "fr": "Accès à la base impossible. Vérifiez serveur, utilisateur, mot de passe et droits.",
+    "it": "Accesso al database non riuscito. Verifica server, utente, password e privilegi.",
+    "es": "Falló el acceso a la base. Revisa servidor, usuario, contraseña y permisos."
+  },
+  "PHP-Version oder benötigte PHP-Erweiterungen passen nicht zum Lockfile.": {
+    "en": "PHP version or required extensions do not match the lockfile.",
+    "fr": "Version PHP ou extensions incompatibles avec le lockfile.",
+    "it": "Versione PHP o estensioni richieste non compatibili con il lockfile.",
+    "es": "La versión PHP o extensiones requeridas no coinciden con el archivo de bloqueo."
+  },
+  "Der Serverprozess hat nicht die benötigten Datei-/Verzeichnisrechte.": {
+    "en": "The server process lacks required file/directory permissions.",
+    "fr": "Le processus serveur n’a pas les droits de fichier/répertoire requis.",
+    "it": "Il processo del server non ha i permessi necessari per file/directory.",
+    "es": "El proceso del servidor no tiene los permisos necesarios de archivos/directorios."
+  },
+  "Das PHP-Speicherlimit ist zu niedrig.": {
+    "en": "PHP memory limit is too low.",
+    "fr": "La limite mémoire PHP est trop basse.",
+    "it": "Il limite di memoria PHP è troppo basso.",
+    "es": "El límite de memoria PHP es demasiado bajo."
+  },
+  "Composer-Netzwerkzugriff fehlgeschlagen. DNS, Proxy und TLS-Zertifikate prüfen.": {
+    "en": "Composer network access failed. Check DNS, proxy and TLS certificates.",
+    "fr": "Accès réseau Composer impossible. Vérifiez DNS, proxy et certificats TLS.",
+    "it": "Accesso rete Composer non riuscito. Verifica DNS, proxy e certificati TLS.",
+    "es": "Falló el acceso de red Composer. Revisa DNS, proxy y certificados TLS."
+  },
+  "Administratordaten ungültig. E-Mail, Anlagebestätigung, Name und übereinstimmende Passwörter mit mindestens zwölf Zeichen prüfen.": {
+    "en": "Invalid administrator data. Check email, account creation choice, name and matching passwords of at least twelve characters.",
+    "fr": "Données administrateur invalides. Vérifiez e-mail, choix de création, nom et mots de passe identiques de douze caractères minimum.",
+    "it": "Dati amministratore non validi. Verifica email, scelta di creazione, nome e password identiche di almeno dodici caratteri.",
+    "es": "Datos de administrador no válidos. Revisa correo, elección de creación, nombre y contraseñas iguales de al menos doce caracteres."
+  },
+  "PHP-CLI-Konfiguration, Datenbank, Schreibrechte und Server-Zeitlimits prüfen. Prozessausgaben bleiben zum Schutz von Zugangsdaten verborgen.": {
+    "en": "Check CLI PHP configuration, database, write permissions and server time limits. Process output stays hidden to protect credentials.",
+    "fr": "Vérifiez PHP CLI, base, droits d’écriture et délais serveur. La sortie reste masquée pour protéger les identifiants.",
+    "it": "Verifica configurazione PHP CLI, database, permessi di scrittura e limiti server. L’output resta nascosto per proteggere le credenziali.",
+    "es": "Revisa configuración PHP CLI, base, permisos de escritura y límites del servidor. La salida se oculta para proteger credenciales."
+  },
+  "Ungültige Umgebungsvariable.": {
+    "en": "Invalid environment variable.",
+    "fr": "Variable d’environnement invalide.",
+    "it": "Variabile di ambiente non valida.",
+    "es": "Variable de entorno no válida."
+  },
+  "Konfiguration konnte nicht geschrieben werden.": {
+    "en": "Could not write configuration.",
+    "fr": "Impossible d’écrire la configuration.",
+    "it": "Impossibile scrivere la configurazione.",
+    "es": "No se pudo escribir la configuración."
+  },
+  "Konfiguration konnte nicht ersetzt werden.": {
+    "en": "Could not replace configuration.",
+    "fr": "Impossible de remplacer la configuration.",
+    "it": "Impossibile sostituire la configurazione.",
+    "es": "No se pudo sustituir la configuración."
+  }
+}

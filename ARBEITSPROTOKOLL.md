@@ -110,3 +110,20 @@
 - `composer require --dev barryvdh/laravel-ide-helper:~3.7 --no-interaction --no-scripts`; Konfiguration aus Referenz übernommen, generierte IDE-Dateien Git-ignoriert.
 - Prüfung: `php artisan ide-helper:generate --no-interaction`; keine Modelländerungen oder Datenbankabfragen durch `ide-helper:models` veranlasst.
 - Commit: `Add Laravel IDE Helper and ignore generated IDE metadata`.
+
+## Setup-Übernahme und Gesamtprüfung
+
+- Setup-Dateien gezielt aus `../LaravelAPI` in dieses Repository kopiert (`Copy-Item -LiteralPath`); das Referenzprojekt blieb unverändert. Übernommen: CLI-/Browser-Assistent, Administratoranlage, Prozessüberwachung, Sprachkatalog, Zugriffsschutz und zugehörige Tests.
+- `composer setup` nutzt denselben STDIN-erhaltenden Callback wie die Referenz. `/setup.php` funktioniert vor `vendor/`/`.env`, benötigt expliziten Zugangsschlüssel und wird beim Abschluss gesperrt.
+- API-Platform-Anpassungen: eigene Setup-Session, tatsächliche Abschlusslinks `/api`, `/api/docs`, `/admin`, `/up`, keine Referenz-Standard-API-Routen. Mailprüfung behauptet keine vorhandenen Verifizierungsendpunkte.
+- Optionalen Asset-Schritt ergänzt: `npm ci --ignore-scripts`, `npm run build`; Node/npm werden ohne frei zusammengesetzte Shell-Befehle gestartet. Der API-Platform-React-Admin benötigt diesen Build.
+- Prüfungen: `php vendor/phpunit/phpunit/phpunit --no-progress` (inklusive isoliertem CLI-Setup, Browser-Setup ohne Dependencies, Zugangsschutz, Formularschutz, SQLite, Administratorrechten, Sprachwahl und Fortschrittsstream), `npm run build`, Pint, Composer-Validierung und Routenprüfung.
+- Tests migrieren ausschließlich die Testdatenbank (`:memory:`) oder isolierte temporäre Datenbanken; kein Setup auf der vorhandenen lokalen Anwendung ausgeführt und keine Zugangsdaten vergeben.
+- Zusätzlicher Schutz gegen Verwechslung mit der Referenz: vorgeschlagener MySQL-/MariaDB-Datenbankname ist `laravel_api_platform`. Vorhandene explizite Konfiguration bleibt maßgeblich.
+- Erster vollständiger Lauf: **59 Tests, 769 Assertions erfolgreich**; Diagnose-Wiederholung ebenfalls Exit-Code 0. `npm run build` erfolgreich (bestehende React/MUI-Directive-/Chunk- und optionale Fontaine-Hinweise). Pint korrigierte Imports/Klassennamen in fünf Dateien; anschließendes `php vendor/bin/pint --test` erfolgreich.
+- `composer validate --strict`, `composer check-platform-reqs`, `git diff --check` erfolgreich. Referenz-Git-Status weiterhin ausschließlich die bereits vorher geänderte `PROJEKTDOKUMENTATION.md`.
+- HTTP-Prüfungen im isolierten Browser-Test: `http://127.0.0.1:<freier-Port>/setup.php` (GET/POST und Fortschrittsstream). API-/Admin-/Runner-Routen zusätzlich über Laravels HTTP-Testclient geprüft.
+- Abschließender Paketabgleich per PowerShell (`ConvertFrom-Json` für beide `composer.json` und Ziel-`vendor/composer/installed.json`): alle **21 direkten Referenzpakete** im richtigen Abschnitt deklariert und installiert; zwölf fehlende Erweiterungen jeweils separat committet. Versionen in `docs/ERWEITERUNGEN.md`.
+- Routenbefehle: temporär nur für den Prüfprozess `$env:ARTISAN_RUNNER_UI_ENABLED='true'`, dann `php artisan route:list --path=artisan`, `--path=filament` und `--path=admin --except-vendor`. Ergebnis: sechs Runner-Routen, fünf Filament-Routen, unveränderter API-Platform-Admin. `--path=api --except-vendor` findet erwartungsgemäß keine eigenen Standard-API-Routen; die API Platform registriert ihre Routen über das Paket.
+- Letzte Prüfung mit `$env:PAO_DISABLE='true'; composer test`: **60 Tests, 774 Assertions erfolgreich, ohne Warnungen**. Erwartete Verbindungsverweigerung beim Start des isolierten Testservers wird nur während der Bereitschaftsprüfung behandelt. Auch direkter npm-Aufruf über Node erfolgreich getestet. `php vendor/bin/pint --test` und `git diff --check` erfolgreich.
+- Setup-Abschlusscommit: `Add API Platform aware CLI and browser setup with integration checks`. Git-Staging umfasst ausschließlich die genannten Projektänderungen; lokale Geheimnisse und generierte Assets bleiben ausgeschlossen. Kein Push ausgeführt.

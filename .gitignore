@@ -25,6 +25,10 @@
 /storage/pail
 /storage/app/laravel-brain/
 /vendor
+/.setup-access
+/.setup-complete
+/.setup.lock
+/.setup-login-attempts.json
 _ide_helper.php
 /_ide_helper_models.php
 /.phpstorm.meta.php
