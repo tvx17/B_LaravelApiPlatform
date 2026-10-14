@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b99e324f7d0ec383e05a8897a424490",
+    "content-hash": "10f22afccd508abb1f421f5cc96b7686",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -1498,6 +1498,68 @@
                 }
             ],
             "time": "2026-03-20T21:10:52+00:00"
+        },
+        {
+            "name": "codesquirrel/artisan-runner-ui",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reyesorlan/artisan-runner-ui.git",
+                "reference": "c5fbec429ce13e0f036b0ad81330e5896f4887e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reyesorlan/artisan-runner-ui/zipball/c5fbec429ce13e0f036b0ad81330e5896f4887e5",
+                "reference": "c5fbec429ce13e0f036b0ad81330e5896f4887e5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^12.0|^13.0",
+                "illuminate/support": "^12.0|^13.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^10.0|^11.0",
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "CodeSquirrel\\ArtisanRunnerUI\\ArtisanRunnerUIServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CodeSquirrel\\ArtisanRunnerUI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Orlan Reyes",
+                    "email": "orlan@codesquirrel.com.au"
+                }
+            ],
+            "description": "Web UI to browse and run Laravel artisan commands",
+            "homepage": "https://github.com/reyesorlan/artisan-runner-ui",
+            "keywords": [
+                "artisan",
+                "artisan-command",
+                "artisan-runner",
+                "console",
+                "laravel",
+                "web-ui"
+            ],
+            "support": {
+                "issues": "https://github.com/reyesorlan/artisan-runner-ui/issues",
+                "source": "https://github.com/reyesorlan/artisan-runner-ui/tree/v1.0.1"
+            },
+            "time": "2026-09-30T08:50:11+00:00"
         },
         {
             "name": "composer/class-map-generator",

@@ -55,3 +55,10 @@
 - `/admin/{path?}` bleibt API Platform Admin. Assets werden mit `php artisan filament:upgrade` veröffentlicht; Composer-Hook und Git-Ausschlüsse ergänzt.
 - Prüfung: `php vendor/phpunit/phpunit/phpunit --filter FilamentTest --no-progress` (Gast, verweigerter/erlaubter Zugang, unbekannter Benutzer).
 - Commit: `Add Filament panel at /filament with explicit access permission`.
+
+### Artisan GUI Runner
+
+- `composer require codesquirrel/artisan-runner-ui:~1.0 --no-interaction --no-scripts`.
+- Runner-Konfiguration, Session-Actions, Controller, Login-/Kontoseiten und `runner:create-user` übernommen. Routen: `/artisan`, `/artisan/login`, `/artisan/account`, `/artisan/logout`; Login gedrosselt, Session-ID bei Anmeldung erneuert.
+- Runner standardmäßig aus, nur ausgewählte Umgebungen; Authentifizierung, Permission und CSRF erforderlich. Destruktive/berechtigungsändernde Befehle gesperrt. Test aus Referenz angepasst: `/admin` darf hier weiterhin existieren.
+- Prüfung: PHPUnit `ArtisanRunnerUiTest|CreateRunnerUserTest`; anschließend separater Commit `Add authenticated Artisan GUI runner at /artisan`.
