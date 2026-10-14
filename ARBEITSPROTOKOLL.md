@@ -42,3 +42,9 @@
 - Prüfung: `php artisan package:discover --ansi`, `php vendor/phpunit/phpunit/phpunit --filter PermissionsTest --no-progress`. Tests verwenden SQLite `:memory:`; keine Migration auf der lokalen Anwendungsdatenbank.
 - Ausgangstest vor Änderungen scheiterte am Sandbox-Schreibzugriff auf Blade-Cache; Prüfung außerhalb der Sandbox wiederholt.
 - Commit: `Add Spatie Permission with roles and authorization middleware`.
+
+### Sanctum und CORS
+
+- `composer require laravel/sanctum:~4.0 --no-interaction --no-scripts`; Sanctum-/CORS-Konfiguration übernommen, Token-Migration ergänzt, `HasApiTokens` und Stateful-Middleware aktiviert. Keine Standard-API-Routen erzeugt.
+- Prüfung: Paketregistrierung und Sanctum-Integrationstest (Token mit `auth:sanctum`, CSRF-Cookie und CORS).
+- Commit: `Add Sanctum token authentication and credentialed CORS`.
