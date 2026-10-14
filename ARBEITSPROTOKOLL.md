@@ -62,3 +62,9 @@
 - Runner-Konfiguration, Session-Actions, Controller, Login-/Kontoseiten und `runner:create-user` übernommen. Routen: `/artisan`, `/artisan/login`, `/artisan/account`, `/artisan/logout`; Login gedrosselt, Session-ID bei Anmeldung erneuert.
 - Runner standardmäßig aus, nur ausgewählte Umgebungen; Authentifizierung, Permission und CSRF erforderlich. Destruktive/berechtigungsändernde Befehle gesperrt. Test aus Referenz angepasst: `/admin` darf hier weiterhin existieren.
 - Prüfung: PHPUnit `ArtisanRunnerUiTest|CreateRunnerUserTest`; anschließend separater Commit `Add authenticated Artisan GUI runner at /artisan`.
+
+### Media Library
+
+- `composer require spatie/laravel-medialibrary:~11.0 --no-interaction --no-scripts`; Konfiguration und Media-Migration aus Referenz übernommen. Wie dort noch kein Fachmodell und kein Upload-Endpunkt.
+- Prüfung: Paketregistrierung und bestehende Featuretests mit allen Migrationen auf SQLite `:memory:`.
+- Commit: `Add Spatie Media Library configuration and media migration`.
