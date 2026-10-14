@@ -80,3 +80,9 @@
 - `composer require laravel/fortify:~1.0 --no-interaction --no-scripts`; Referenz-Konfiguration mit deaktivierten Views/Features übernommen. Eigener Provider ruft wie Referenz `Fortify::ignoreRoutes()` auf, damit API-Platform- und Runner-Routen nicht kollidieren.
 - Referenz-spezifische Standard-API-Response-Klassen nicht übernommen; keine neuen `/api/login`-/`/api/user`-Versprechen. Bestehende Runner-Anmeldung bleibt Anwendungscode, Filament verwaltet seine Anmeldung selbst.
 - Prüfung: Paketregistrierung und Sessiontests; Commit `Add Fortify foundation without conflicting automatic routes`.
+
+### Telescope
+
+- `composer require --dev laravel/telescope:~5.25 --no-interaction --no-scripts`; automatische Registrierung deaktiviert, ausschließlich in `local` registriert. Konfiguration, Migration und Maskierung sensibler Requestdaten übernommen.
+- Test an vorhandenen Health-Endpunkt `/up` angepasst; `TelescopeTest` prüft lokale Oberfläche, Ausschluss in Testing/Produktion und Maskierung.
+- Commit: `Add local-only Telescope with sensitive request masking`.
