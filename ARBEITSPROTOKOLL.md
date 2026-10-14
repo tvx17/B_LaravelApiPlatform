@@ -48,3 +48,10 @@
 - `composer require laravel/sanctum:~4.0 --no-interaction --no-scripts`; Sanctum-/CORS-Konfiguration übernommen, Token-Migration ergänzt, `HasApiTokens` und Stateful-Middleware aktiviert. Keine Standard-API-Routen erzeugt.
 - Prüfung: Paketregistrierung und Sanctum-Integrationstest (Token mit `auth:sanctum`, CSRF-Cookie und CORS).
 - Commit: `Add Sanctum token authentication and credentialed CORS`.
+
+### Filament
+
+- `composer require filament/filament:~5.0 --no-interaction --no-scripts`; Panel-Provider aus Referenz unter `/filament` registriert. User-Zugang erfordert `access-admin-panel`; `admin:grant-access` vergibt das Recht gezielt an bestehende Konten.
+- `/admin/{path?}` bleibt API Platform Admin. Assets werden mit `php artisan filament:upgrade` veröffentlicht; Composer-Hook und Git-Ausschlüsse ergänzt.
+- Prüfung: `php vendor/phpunit/phpunit/phpunit --filter FilamentTest --no-progress` (Gast, verweigerter/erlaubter Zugang, unbekannter Benutzer).
+- Commit: `Add Filament panel at /filament with explicit access permission`.
