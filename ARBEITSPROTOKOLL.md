@@ -104,3 +104,9 @@
 - `composer require --dev kitloong/laravel-migrations-generator:~7.4 --no-interaction --no-scripts`.
 - `MigrationsGeneratorIntegrationTest` exportiert ausschließlich eine isolierte Testtabelle in ein temporäres Verzeichnis mit `--skip-log`, spielt die Migration wieder ein und prüft, dass der Migrationseintrag unverändert bleibt. Kein Export der Anwendungsdatenbank.
 - Commit: `Add Kitloong Migrations Generator with schema replay test`.
+
+### IDE Helper
+
+- `composer require --dev barryvdh/laravel-ide-helper:~3.7 --no-interaction --no-scripts`; Konfiguration aus Referenz übernommen, generierte IDE-Dateien Git-ignoriert.
+- Prüfung: `php artisan ide-helper:generate --no-interaction`; keine Modelländerungen oder Datenbankabfragen durch `ide-helper:models` veranlasst.
+- Commit: `Add Laravel IDE Helper and ignore generated IDE metadata`.

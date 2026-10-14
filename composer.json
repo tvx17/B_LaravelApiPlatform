@@ -20,6 +20,7 @@
         "spatie/laravel-permission": "~8.3"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "~3.7",
         "fakerphp/faker": "^1.23",
         "kitloong/laravel-migrations-generator": "~7.4",
         "laramint/laravel-brain": "~2.4",
